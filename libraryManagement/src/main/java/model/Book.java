@@ -2,7 +2,7 @@ package model;
 
 public class Book {
     private String name;
-    private String ImageScr;
+    private String imageSrc; // Follow Java naming conventions
     private String author;
 
     public String getName() {
@@ -13,12 +13,12 @@ public class Book {
         this.name = name;
     }
 
-    public String getImageScr() {
-        return ImageScr;
+    public String getImageSrc() {
+        return imageSrc;
     }
 
-    public void setImageScr(String imageScr) {
-        ImageScr = imageScr;
+    public void setImageSrc(String imageSrc) {
+        this.imageSrc = imageSrc;
     }
 
     public String getAuthor() {

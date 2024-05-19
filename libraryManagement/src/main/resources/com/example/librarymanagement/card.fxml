@@ -7,32 +7,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="400.0" spacing="15.0" style="-fx-background-radius: 15;" styleClass="shadow" stylesheets="@../../../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagement.CardController">
-   <children>
-      <ImageView fx:id="bookImage" fitHeight="155.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/FS.png" />
-         </image>
+   <ImageView fx:id="bookImage" fitHeight="155.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../image/FS.png" />
+   </ImageView>
+   <VBox alignment="CENTER" prefHeight="185.0" prefWidth="252.0" spacing="10.0">
+      <Label fx:id="bookName" prefHeight="63.0" prefWidth="244.0" text="Funny &#10;Story" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="authorName" prefHeight="24.0" prefWidth="241.0" text="Emily Henry" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../image/5_star-removebg-preview%20(1).png" />
       </ImageView>
-      <VBox alignment="CENTER" prefHeight="185.0" prefWidth="252.0" spacing="10.0">
-         <children>
-            <Label fx:id="bookName" prefHeight="63.0" prefWidth="244.0" text="Funny &#10;Story">
-               <font>
-                  <Font name="Microsoft YaHei UI Bold" size="23.0" />
-               </font>
-            </Label>
-            <Label fx:id="authorName" prefHeight="24.0" prefWidth="241.0" text="Emily Henry">
-               <font>
-                  <Font name="Microsoft YaHei UI" size="18.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="30.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../image/4_star-removebg-preview.png" />
-               </image>
-            </ImageView>
-         </children>
-      </VBox>
-   </children>
+   </VBox>
 </HBox>
