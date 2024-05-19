@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1315.0" styleClass="white-background" stylesheets="@../../../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagement.Controller">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" styleClass="white-background" stylesheets="@../../../css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="252.0" text="InkWell" textFill="#2e7d32">
+               <font>
+                  <Font name="Marlboro" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="36.0" prefWidth="6.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0" spacing="20.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="231.0" promptText="Search" stylesheets="@../../../css/styles.css">
+                     <styleClass>
+                        <String fx:value="white-background" />
+                        <String fx:value="transparent" />
+                     </styleClass></TextField>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/icons8-search-30.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="60.0" prefWidth="547.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="169.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="92.0" text="Kenneth Arco">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/Ryo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" styleClass="white-background" stylesheets="@../../../css/styles.css">
+         <children>
+            <VBox prefHeight="221.0" prefWidth="240.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="92.0" text="Explore">
+                     <font>
+                        <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/trending.png" />
+                           </image></ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Top Books">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/Browsing_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Browse">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/category_8428349.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Categories">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="221.0" prefWidth="240.0" spacing="5.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Label prefHeight="53.0" prefWidth="124.0" text="Your Books">
+                     <font>
+                        <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/reading.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Reading">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/experience-2-512.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Favorites">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/history_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="History">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="221.0" prefWidth="240.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="92.0" text="Shelves">
+                     <font>
+                        <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="mouse-moved" stylesheets="@../../../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/book-shelf.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="50.0" prefWidth="157.0" text="Your Shelves">
+                           <font>
+                              <Font name="Microsoft YaHei UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #2E7D32;" text="Create a shelf" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft YaHei UI" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Recommended">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="250.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../../../css/styles.css">
+               <content>
+                  <HBox fx:id="cardLayout" prefHeight="235.0" prefWidth="1240.0" styleClass="transparent" stylesheets="@../../../css/styles.css" />
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
