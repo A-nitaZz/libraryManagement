@@ -28,7 +28,7 @@
                </opaqueInsets>
             </Label>
             <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="36.0" prefWidth="6.0" />
-            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0" spacing="20.0">
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0" spacing="20.0" styleClass="round-layout" stylesheets="@../../../css/styles.css">
                <children>
                   <TextField prefHeight="25.0" prefWidth="231.0" promptText="Search" stylesheets="@../../../css/styles.css">
                      <styleClass>

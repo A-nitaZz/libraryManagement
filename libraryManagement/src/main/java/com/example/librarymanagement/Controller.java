@@ -3,9 +3,6 @@ package com.example.librarymanagement;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import model.Book;
 
@@ -19,39 +16,23 @@ public class Controller implements Initializable {
 
     @FXML
     private HBox cardLayout;
-
     private List<Book> recentlyAdded;
 
-    @FXML
-    private TextField searchTextField;
-
-    @FXML
-    private ImageView searchImageView;
-
-    @FXML
-    private void handleSearchClick(MouseEvent event) {
-        String searchText = searchTextField.getText();
-        if (searchText != null && !searchText.isEmpty()) {
-            System.out.println("Searching for: " + searchText);
-        } else {
-            System.out.println("Search field is empty");
-        }
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         recentlyAdded = new ArrayList<>(recentlyAdded());
         try {
-            for (Book book : recentlyAdded) {
+            for (int i=0; i<recentlyAdded.size(); i++){
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/com/example/librarymanagement/hello-view.fxml"));
+                fxmlLoader.setLocation(getClass().getResource("card.fxml"));
                 HBox cardBox = fxmlLoader.load();
                 CardController cardController = fxmlLoader.getController();
-                cardController.setData(book);
+                cardController.setData(recentlyAdded.get(i));
                 cardLayout.getChildren().add(cardBox);
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 

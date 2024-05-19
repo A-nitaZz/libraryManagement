@@ -10,6 +10,7 @@ import model.Book;
 
 import java.util.Objects;
 
+
 public class CardController {
     @FXML
     private Label authorName;
@@ -23,22 +24,33 @@ public class CardController {
     @FXML
     private ImageView bookImage;
 
-    private final String[] colors = {"#B9E5FF", "#BDB2FE", "#FB9AA8", "#FF5056"};
+    private String[] colors = {"#B9E5FF", "#BDB2FE", "#FB9AA8", "#FF5056"};
 
 
     public void setData(Book book) {
-        Objects.requireNonNull(book.getImageScr(), "Book image source must not be null");
+        if (book != null && book.getImageScr() != null) {
+            try {
+                Image image = new Image(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(book.getImageScr())));
+                bookImage.setImage(image);
+            } catch (NullPointerException e) {
+                System.err.println("Error loading image: " + e.getMessage());
+            }
 
-        // Debug prints to verify paths
-        System.out.println("Loading image: /image/" + book.getImageScr());
+            if (book.getName() != null) {
+                bookName.setText(book.getName());
+            } else {
+                bookName.setText("Unknown");
+            }
 
-        // Correct path for resources
-        String imagePath = "/image/" + book.getImageScr();
-        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(imagePath), "Image resource not found: " + imagePath));
-        bookImage.setImage(image);
+            if (book.getAuthor() != null) {
+                authorName.setText(book.getAuthor());
+            } else {
+                authorName.setText("Unknown");
+            }
 
-        bookName.setText(book.getName());
-        authorName.setText(book.getAuthor());
-        box.setStyle("-fx-background-color: " + Color.web(colors[(int)(Math.random() * colors.length)]));
+            box.setStyle("-fx-background-color: " + Color.web(colors[(int) (Math.random() * colors.length)]));
+        } else {
+            System.out.println("Invalid book data provided.");
+        }
     }
 }
