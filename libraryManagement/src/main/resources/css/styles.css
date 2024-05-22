@@ -22,3 +22,9 @@
 .shadow {
     -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0), 10, 0, 0, 10);
 }
+
+.btn {
+    -fx-background-color: linear-gradient(to bottom right, #16a47c, #2a827b);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}

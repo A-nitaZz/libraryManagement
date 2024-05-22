@@ -11,8 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/librarymanagement/hello-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 1315, 600);
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/librarymanagement/SignUp.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 755, 600);
             //scene.getStylesheets().add(Main.class.getResource("styles.css").toExternalForm());
             stage.setTitle("Library System");
             stage.setScene(scene);

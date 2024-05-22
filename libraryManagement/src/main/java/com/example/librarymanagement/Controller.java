@@ -102,6 +102,83 @@ public class Controller implements Initializable {
         book.setAuthor("Yulin Kuang");
         ls.add(book);
 
+        book = new Book();
+        book.setName("Sensitive");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Sandy Te");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Think Ahead:7 Decisions");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Cherry Qut");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("The Ravens");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Nicole Yup");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Mind Magic");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Allie Che");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("AI 2024");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("John Pered");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Shine");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Kate Pret");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Secure Love");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Ema Ej");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Family Family");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Xavi Dael");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Love & Luck");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Lois Dan");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Love, Rosie");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Mary Quo");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("HThe Way");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Precious Jen");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Artifacts");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Meguil Berda");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Weather Girl");
+        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setAuthor("Chris Ivan");
+        ls.add(book);
         return ls;
     }
 }

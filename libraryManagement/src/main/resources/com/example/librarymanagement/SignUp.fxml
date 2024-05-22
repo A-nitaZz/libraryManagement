@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="449.0" prefWidth="755.0" styleClass="shadow" stylesheets="@../../../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagement.SignUpController">
+    <content>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="755.0" styleClass="shadow" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+            <padding>
+                <Insets left="15.0" right="15.0" />
+            </padding>
+            <stylesheets>
+                <URL value="@../../../css/styles.css" />
+                <URL value="@../../../css/styles.css" />
+            </stylesheets>
+            <VBox layoutX="-1.0" layoutY="9.0" prefHeight="424.0" prefWidth="756.0">
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="773.0" spacing="40.0">
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                        <Label text="First Name" />
+                        <TextField fx:id="firstName" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                    <VBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="10.0" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                        <Label text="Last Name" />
+                        <TextField fx:id="lastName" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                </HBox>
+                <HBox prefHeight="80.0" prefWidth="756.0">
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="773.0" spacing="40.0">
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                            <Label text="Gender" />
+                            <ChoiceBox fx:id="genderBox" prefHeight="32.0" prefWidth="277.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="10.0" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                            <Label text="Birthdate" />
+                            <DatePicker fx:id="birthDate" prefHeight="32.0" prefWidth="283.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                        </VBox>
+                    </HBox>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="773.0" spacing="40.0">
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                        <Label text="Phone Number" />
+                        <TextField fx:id="phoneNumber" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                    <VBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="10.0" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                        <Label text="Email" />
+                        <TextField fx:id="eMail" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="80.0" prefWidth="200.0" spacing="40.0">
+                    <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="91.0" prefWidth="591.0" spacing="8.0">
+                        <Label text="Address" />
+                        <TextField fx:id="address" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="593.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="773.0" spacing="40.0">
+                    <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
+                        <Label text="Password" />
+                        <TextField fx:id="password" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                    <VBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="10.0" prefHeight="80.0" prefWidth="277.0" spacing="8.0">
+                        <Label text="Confirm Password" />
+                        <TextField fx:id="confirmPassword" prefHeight="32.0" prefWidth="295.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                    </VBox>
+                </HBox>
+            </VBox>
+            <Button fx:id="signUpBtn" layoutX="311.0" layoutY="445.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="136.0" stylesheets="@../../../css/styles.css" text="SIGN UP">
+                <font>
+                    <Font name="System Bold Italic" size="13.0" />
+                </font>
+            <styleClass>
+               <String fx:value="off-white-background" />
+               <String fx:value="btn" />
+            </styleClass>
+            </Button>
+            <Label accessibleRole="HYPERLINK" layoutX="277.0" layoutY="421.0" text="Already have an account? Login here." />
+        </AnchorPane>
+    </content>
+    <header>
+        <ToolBar prefHeight="40.0" prefWidth="756.0" styleClass="off-white-background" stylesheets="@../../../css/styles.css">
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="741.0" stylesheets="@../../../css/styles.css">
+                <Label alignment="CENTER" text="SIGN UP FORM">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+            </HBox>
+        </ToolBar>
+    </header>
+</DialogPane>
