@@ -47,7 +47,7 @@ public class Controller implements Initializable {
                 VBox bookBox = fxmlLoader.load();
                 BookController bookController = fxmlLoader.getController();
                 bookController.setData(book);
-                if (column == 6) {
+                if (column == 5) {
                     column = 0;
                     row++;
                 }
@@ -63,19 +63,19 @@ public class Controller implements Initializable {
         List<Book> ls = new ArrayList<>();
         Book book = new Book();
         book.setName("Funny \nStory");
-        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setImageSrc("/image/FS.png");
         book.setAuthor("Emily Henry");
         ls.add(book);
 
         book = new Book();
         book.setName("The ABC Murders: \nA Hercule Poirot Mystery");
-        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setImageSrc("/image/TABCM.jpg");
         book.setAuthor("Agatha Christie");
         ls.add(book);
 
         book = new Book();
         book.setName("How to End a Love Story: \nA Novel");
-        book.setImageSrc("com/example/librarymanagement/imgs/NIL.jpg");
+        book.setImageSrc("/image/HTEALS.jpg");
         book.setAuthor("Yulin Kuang");
         ls.add(book);
 
@@ -85,100 +85,83 @@ public class Controller implements Initializable {
     private List<Book> books() {
         List<Book> ls = new ArrayList<>();
         Book book = new Book();
-        book.setName("Funny Story");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Emily Henry");
+        book.setName("Sensitive: \nThe Hidden Power of the Highly Sensitive Person in a Loud, Fast, Too-Much World");
+        book.setImageSrc("/image/Sensitive.jpg");
+        book.setAuthor("Jenn Granneman, Andre Sólo");
         ls.add(book);
 
         book = new Book();
-        book.setName("The ABC Murders:A Hercule Poirot Mystery");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Agatha Christie");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("How to End a Love Story: A Novel");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Yulin Kuang");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("Sensitive");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Sandy Te");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("Think Ahead:7 Decisions");
-        book.setImageSrc("src/main/resources/image/FS.png");
+        book.setName("Think Ahead: \n7 Decisions You Can Make Today for the God-Honoring Life You Want Tomorrow");
+        book.setImageSrc("/image/Think-Ahead.jpg");
         book.setAuthor("Cherry Qut");
         ls.add(book);
 
         book = new Book();
-        book.setName("The Ravens");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Nicole Yup");
+        book.setName("The Ravens: \nHow to Prepare for and Profit from the Turbulent Times Ahead");
+        book.setImageSrc("/image/Ravens.jpg");
+        book.setAuthor("Robert Kiyosaki");
         ls.add(book);
 
         book = new Book();
-        book.setName("Mind Magic");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Allie Che");
+        book.setName("Think Ahead:\n7 Decisions You Can Make Today for the God-Honoring Life You Want Tomorrow ");
+        book.setImageSrc("/image/Think-Ahead.jpg");
+        book.setAuthor("Cherry Qut");
         ls.add(book);
 
         book = new Book();
-        book.setName("AI 2024");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("John Pered");
+        book.setName("Mind Magic:\nThe Neuroscience of Manifestation and How It Changes Everything");
+        book.setImageSrc("/image/MindMagic.jpg");
+        book.setAuthor("James R. Doty, MD");
         ls.add(book);
 
         book = new Book();
-        book.setName("Shine");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Kate Pret");
+        book.setName("Think Ahead: \n7 Decisions You Can Make Today for the God-Honoring Life You Want Tomorrow ");
+        book.setImageSrc("/image/Think-Ahead.jpg");
+        book.setAuthor("Cherry Qut");
         ls.add(book);
 
         book = new Book();
-        book.setName("Secure Love");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Ema Ej");
+        book.setName("AI 2041:\nTen Visions for Our Future");
+        book.setImageSrc("/image/AI_2024.jpg");
+        book.setAuthor("Kai-Fu Lee, Chen Qiufan");
         ls.add(book);
 
         book = new Book();
-        book.setName("Family Family");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Xavi Dael");
+        book.setName("Mushoku Tensei: Jobless Reincarnation\n(Light Novel) Vol. 26");
+        book.setImageSrc("/image/Jobless.jpg");
+        book.setAuthor("Rifujin Na Magonote");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("The Eminence in Shadow\nVol. 1 (light novel)");
+        book.setImageSrc("/image/Shadow.jpg");
+        book.setAuthor("Daisuke Aizawa");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Re:Zero:\nStarting Life in Another World, Vol. 1");
+        book.setImageSrc("/image/ReZero.jpg");
+        book.setAuthor("Tappei Nagatsuki ");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("Classroom of the Elite\n(Light Novel) Vol. 1");
+        book.setImageSrc("/image/Classroom.jpg");
+        book.setAuthor("Syougo Kinugasa");
+        ls.add(book);
+
+        book = new Book();
+        book.setName("The Kept Man of the Princess Knight\n(light novel) Vol. 1");
+        book.setImageSrc("/image/TKMPK.jpg");
+        book.setAuthor("Toru Shirogane");
         ls.add(book);
 
         book = new Book();
         book.setName("Love & Luck");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Lois Dan");
+        book.setImageSrc("/image/LoveLuck.jpg");
+        book.setAuthor("Jenna Evans Welch");
         ls.add(book);
 
-        book = new Book();
-        book.setName("Love, Rosie");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Mary Quo");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("HThe Way");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Precious Jen");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("Artifacts");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Meguil Berda");
-        ls.add(book);
-
-        book = new Book();
-        book.setName("Weather Girl");
-        book.setImageSrc("src/main/resources/image/FS.png");
-        book.setAuthor("Chris Ivan");
-        ls.add(book);
         return ls;
     }
 }

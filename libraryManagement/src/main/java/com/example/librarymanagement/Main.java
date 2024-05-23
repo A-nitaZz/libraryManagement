@@ -11,10 +11,10 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/librarymanagement/SignUp.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 755, 600);
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/example/librarymanagement/BookStore.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1315, 600);
             //scene.getStylesheets().add(Main.class.getResource("styles.css").toExternalForm());
-            stage.setTitle("Library System");
+            stage.setTitle("InkWell Insights");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

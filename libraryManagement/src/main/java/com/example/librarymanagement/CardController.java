@@ -31,7 +31,7 @@ public class CardController {
                 String imagePath = book.getImageSrc();
                 System.out.println("Loading image from path: " + imagePath); // Debug statement
 
-                var resourceStream = getClass().getClassLoader().getResourceAsStream(imagePath);
+                var resourceStream = getClass().getResourceAsStream(imagePath);
                 if (resourceStream == null) {
                     System.out.println("Resource not found: " + imagePath);
                 } else {

@@ -110,7 +110,7 @@ public class SignUpController implements Initializable {
 
     private void switchToBookstoreScene() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/librarymanagement/hello-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/librarymanagement/BookStore.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) signUpBtn.getScene().getWindow();
             Scene scene = new Scene(root);

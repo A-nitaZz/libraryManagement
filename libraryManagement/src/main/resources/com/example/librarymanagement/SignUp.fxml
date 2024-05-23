@@ -40,7 +40,7 @@
                     <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="773.0" spacing="40.0">
                         <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
                             <Label text="Gender" />
-                            <ChoiceBox fx:id="genderBox" prefHeight="32.0" prefWidth="277.0" styleClass="light-pink-background" stylesheets="@../../../css/styles.css" />
+                            <ChoiceBox fx:id="genderBox" prefHeight="32.0" prefWidth="277.0" stylesheets="@../../../css/styles.css" />
                         </VBox>
                         <VBox alignment="CENTER_LEFT" layoutX="65.0" layoutY="10.0" prefHeight="100.0" prefWidth="274.0" spacing="8.0">
                             <Label text="Birthdate" />
